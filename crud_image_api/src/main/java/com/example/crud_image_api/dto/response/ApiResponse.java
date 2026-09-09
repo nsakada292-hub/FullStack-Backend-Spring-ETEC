@@ -1,0 +1,14 @@
+package com.example.crud_image_api.dto.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class ApiResponse <T>{
+    private String msg;
+    private Integer status;
+    private T data;
+}
